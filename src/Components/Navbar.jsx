@@ -1,14 +1,36 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FaShoppingCart, FaUser } from "react-icons/fa";
+import { useCart } from "../context/CartContext";
 
 export default function Navbar() {
-  return (
-    <nav>
-      <h2>Nexus Store</h2>
+  const { cart } = useCart();
 
-      <div>
-        <Link to="/">Home</Link>{" "}
-        <Link to="/products">Products</Link>{" "}
-        <Link to="/login">Login</Link>
+  const cartCount = cart.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
+  return (
+    <nav className="navbar">
+      <div className="logo">
+        <h2>Cartify</h2>
+      </div>
+
+      <div className="nav-links">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/products">Products</NavLink>
+        <NavLink to="/login">Login</NavLink>
+      </div>
+
+      <div className="nav-icons">
+
+        <NavLink to="/cart" className="cart-icon">
+          <FaShoppingCart />
+          <span>{cartCount}</span>
+        </NavLink>
+
+        <FaUser className="user-icon" />
+
       </div>
     </nav>
   );

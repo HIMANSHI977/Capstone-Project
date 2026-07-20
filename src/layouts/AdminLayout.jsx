@@ -3,12 +3,12 @@ import Sidebar from "../Components/Sidebar";
 
 export default function AdminLayout() {
   return (
-    <div className="admin-container">
+    <div className="admin-layout">
       <Sidebar />
 
-      <div className="admin-main">
+      <main className="admin-main">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 }

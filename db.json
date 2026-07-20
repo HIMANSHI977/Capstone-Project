@@ -1,0 +1,457 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 16",
+      "brand": "Apple",
+      "category": "Electronics",
+      "price": 89999,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+    },
+    {
+      "id": 2,
+      "name": "Galaxy S25",
+      "brand": "Samsung",
+      "category": "Electronics",
+      "price": 79999,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf"
+    },
+    {
+      "id": 3,
+      "name": "MacBook Air M3",
+      "brand": "Apple",
+      "category": "Laptops",
+      "price": 119999,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1517336714739-489689fd1ca8"
+    },
+    {
+      "id": 4,
+      "name": "Dell XPS 15",
+      "brand": "Dell",
+      "category": "Laptops",
+      "price": 129999,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+    },
+    {
+      "id": 5,
+      "name": "Sony WH-1000XM5",
+      "brand": "Sony",
+      "category": "Headphones",
+      "price": 29999,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+    },
+    {
+      "id": 6,
+      "name": "AirPods Pro",
+      "brand": "Apple",
+      "category": "Headphones",
+      "price": 24999,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1"
+    },
+    {
+      "id": 7,
+      "name": "Nike Air Max",
+      "brand": "Nike",
+      "category": "Shoes",
+      "price": 7999,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+    },
+    {
+      "id": 8,
+      "name": "Adidas Ultraboost",
+      "brand": "Adidas",
+      "category": "Shoes",
+      "price": 9999,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1543508282-6319a3e2621f"
+    },
+    {
+      "id": 9,
+      "name": "Men's Hoodie",
+      "brand": "H&M",
+      "category": "Fashion",
+      "price": 1999,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+    },
+    {
+      "id": 10,
+      "name": "Women's Jacket",
+      "brand": "Zara",
+      "category": "Fashion",
+      "price": 3499,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1"
+    },
+    {
+      "id": 11,
+      "name": "Gaming Mouse",
+      "brand": "Logitech",
+      "category": "Accessories",
+      "price": 2999,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1527814050087-3793815479db"
+    },
+    {
+      "id": 12,
+      "name": "Mechanical Keyboard",
+      "brand": "Keychron",
+      "category": "Accessories",
+      "price": 5999,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae"
+    },
+    {
+      "id": 13,
+      "name": "Smart Watch",
+      "brand": "Noise",
+      "category": "Wearables",
+      "price": 4999,
+      "rating": 4.3,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+    },
+    {
+      "id": 14,
+      "name": "iPad Air",
+      "brand": "Apple",
+      "category": "Tablets",
+      "price": 59999,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0"
+    },
+    {
+      "id": 15,
+      "name": "Canon EOS R50",
+      "brand": "Canon",
+      "category": "Camera",
+      "price": 74999,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32"
+    },
+    {
+      "id": 16,
+      "name": "Office Chair",
+      "brand": "Green Soul",
+      "category": "Furniture",
+      "price": 8999,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+    },
+    {
+      "id": 17,
+      "name": "Study Table",
+      "brand": "IKEA",
+      "category": "Furniture",
+      "price": 12999,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+    },
+    {
+      "id": 18,
+      "name": "Coffee Maker",
+      "brand": "Philips",
+      "category": "Home Appliances",
+      "price": 4999,
+      "rating": 4.4,
+      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+    },
+    {
+      "id": 19,
+      "name": "Bluetooth Speaker",
+      "brand": "JBL",
+      "category": "Audio",
+      "price": 6999,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+    },
+    {
+      "id": 20,
+      "name": "Backpack",
+      "brand": "Wildcraft",
+      "category": "Bags",
+      "price": 2499,
+      "rating": 4.5,
+      "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+    }
+    ,
+{
+  "id": 21,
+  "name": "OnePlus 13",
+  "brand": "OnePlus",
+  "category": "Electronics",
+  "price": 69999,
+  "rating": 4.8,
+  "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+},
+{
+  "id": 22,
+  "name": "Google Pixel 9",
+  "brand": "Google",
+  "category": "Electronics",
+  "price": 74999,
+  "rating": 4.9,
+  "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
+},
+{
+  "id": 23,
+  "name": "HP Pavilion 15",
+  "brand": "HP",
+  "category": "Laptops",
+  "price": 65999,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+},
+{
+  "id": 24,
+  "name": "Lenovo IdeaPad Slim 5",
+  "brand": "Lenovo",
+  "category": "Laptops",
+  "price": 58999,
+  "rating": 4.6,
+  "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+},
+{
+  "id": 25,
+  "name": "Boat Rockerz 550",
+  "brand": "Boat",
+  "category": "Headphones",
+  "price": 2499,
+  "rating": 4.4,
+  "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+},
+{
+  "id": 26,
+  "name": "Puma Running Shoes",
+  "brand": "Puma",
+  "category": "Shoes",
+  "price": 6499,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+},
+{
+  "id": 27,
+  "name": "Levi's Jeans",
+  "brand": "Levi's",
+  "category": "Fashion",
+  "price": 2799,
+  "rating": 4.7,
+  "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
+},
+{
+  "id": 28,
+  "name": "Casual T-Shirt",
+  "brand": "Nike",
+  "category": "Fashion",
+  "price": 1499,
+  "rating": 4.3,
+  "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab"
+},
+{
+  "id": 29,
+  "name": "Gaming Headset",
+  "brand": "Razer",
+  "category": "Gaming",
+  "price": 5999,
+  "rating": 4.8,
+  "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+},
+{
+  "id": 30,
+  "name": "PlayStation 5",
+  "brand": "Sony",
+  "category": "Gaming",
+  "price": 54999,
+  "rating": 4.9,
+  "image": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db"
+},
+{
+  "id": 31,
+  "name": "Xbox Series X",
+  "brand": "Microsoft",
+  "category": "Gaming",
+  "price": 52999,
+  "rating": 4.8,
+  "image": "https://images.unsplash.com/photo-1606813907291-d86efa9b94db"
+},
+{
+  "id": 32,
+  "name": "Kindle Paperwhite",
+  "brand": "Amazon",
+  "category": "Books",
+  "price": 13999,
+  "rating": 4.7,
+  "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794"
+},
+{
+  "id": 33,
+  "name": "Study Lamp",
+  "brand": "Philips",
+  "category": "Home",
+  "price": 1499,
+  "rating": 4.4,
+  "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+},
+{
+  "id": 34,
+  "name": "Microwave Oven",
+  "brand": "LG",
+  "category": "Home Appliances",
+  "price": 10999,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c"
+},
+{
+  "id": 35,
+  "name": "Air Fryer",
+  "brand": "Philips",
+  "category": "Home Appliances",
+  "price": 8999,
+  "rating": 4.6,
+  "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c"
+},
+{
+  "id": 36,
+  "name": "Electric Kettle",
+  "brand": "Prestige",
+  "category": "Kitchen",
+  "price": 1799,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+},
+{
+  "id": 37,
+  "name": "Dining Table",
+  "brand": "Home Centre",
+  "category": "Furniture",
+  "price": 24999,
+  "rating": 4.4,
+  "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+},
+{
+  "id": 38,
+  "name": "Office Desk",
+  "brand": "IKEA",
+  "category": "Furniture",
+  "price": 14999,
+  "rating": 4.6,
+  "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+},
+{
+  "id": 39,
+  "name": "Yoga Mat",
+  "brand": "Boldfit",
+  "category": "Sports",
+  "price": 999,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a"
+},
+{
+  "id": 40,
+  "name": "Cricket Bat",
+  "brand": "SG",
+  "category": "Sports",
+  "price": 3499,
+  "rating": 4.7,
+  "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e"
+},
+{
+  "id": 41,
+  "name": "Football",
+  "brand": "Nivia",
+  "category": "Sports",
+  "price": 1299,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1508098682722-e99c643e7485"
+},
+{
+  "id": 42,
+  "name": "Smart TV 55 Inch",
+  "brand": "Samsung",
+  "category": "Electronics",
+  "price": 59999,
+  "rating": 4.8,
+  "image": "https://images.unsplash.com/photo-1593784991095-a205069470b6"
+},
+{
+  "id": 43,
+  "name": "Bluetooth Soundbar",
+  "brand": "Sony",
+  "category": "Audio",
+  "price": 11999,
+  "rating": 4.6,
+  "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d"
+},
+{
+  "id": 44,
+  "name": "Canon Printer",
+  "brand": "Canon",
+  "category": "Office",
+  "price": 7999,
+  "rating": 4.4,
+  "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+},
+{
+  "id": 45,
+  "name": "Wireless Router",
+  "brand": "TP-Link",
+  "category": "Networking",
+  "price": 2999,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1563770660941-20978e870e26"
+},
+{
+  "id": 46,
+  "name": "External SSD 1TB",
+  "brand": "Samsung",
+  "category": "Storage",
+  "price": 9999,
+  "rating": 4.8,
+  "image": "https://images.unsplash.com/photo-1591799265444-d66432b91588"
+},
+{
+  "id": 47,
+  "name": "Fitness Band",
+  "brand": "Mi",
+  "category": "Wearables",
+  "price": 2999,
+  "rating": 4.4,
+  "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+},
+{
+  "id": 48,
+  "name": "Perfume for Men",
+  "brand": "Fogg",
+  "category": "Beauty",
+  "price": 899,
+  "rating": 4.3,
+  "image": "https://images.unsplash.com/photo-1541643600914-78b084683601"
+},
+{
+  "id": 49,
+  "name": "Face Wash",
+  "brand": "Nivea",
+  "category": "Beauty",
+  "price": 299,
+  "rating": 4.5,
+  "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9"
+},
+{
+  "id": 50,
+  "name": "Travel Backpack",
+  "brand": "American Tourister",
+  "category": "Bags",
+  "price": 3999,
+  "rating": 4.7,
+  "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+}
+  ]
+}
+
+

@@ -4,7 +4,7 @@ export default function ProtectedRoute({ children }) {
   const isAdmin = localStorage.getItem("isAdmin");
 
   if (!isAdmin) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/login" replace />;
   }
 
   return children;
