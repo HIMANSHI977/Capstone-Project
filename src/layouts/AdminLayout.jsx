@@ -3,7 +3,7 @@ import Sidebar from "../Components/Sidebar";
 
 export default function AdminLayout() {
   return (
-    <div className="admin-layout">
+    <div className="admin-container">
       <Sidebar />
 
       <main className="admin-main">

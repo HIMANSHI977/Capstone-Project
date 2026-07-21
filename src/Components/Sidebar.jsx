@@ -8,6 +8,7 @@ import {
 
 export default function Sidebar() {
   const navigate = useNavigate();
+  const adminEmail = localStorage.getItem("adminEmail");
 
   function handleLogout() {
     localStorage.removeItem("isAdmin");
@@ -52,11 +53,10 @@ export default function Sidebar() {
       <div className="sidebar-bottom">
         <div className="admin-profile">
           <FaUserCircle className="admin-icon" />
-
-          <div>
-            <h4>Admin</h4>
-            <p>admin@cartify.com</p>
-          </div>
+<div>
+  <h4>Admin</h4>
+  <p>{adminEmail}</p>
+</div>
         </div>
 
         <button className="logout-btn" onClick={handleLogout}>

@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className="nav-links">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/products">Products</NavLink>
-        <NavLink to="/login">Login</NavLink>
+        
       </div>
 
       <div className="nav-icons">
@@ -27,9 +27,10 @@ export default function Navbar() {
         <NavLink to="/cart" className="cart-icon">
           <FaShoppingCart />
           <span>{cartCount}</span>
+        
         </NavLink>
-
-        <FaUser className="user-icon" />
+  <NavLink to="/login"><FaUser className="user-icon" />
+</NavLink>
 
       </div>
     </nav>
