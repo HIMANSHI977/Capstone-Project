@@ -1,38 +1,90 @@
 import { NavLink } from "react-router-dom";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
+import { HashLink } from "react-router-hash-link";
+import { FiUser,FiHeart, FiShoppingBag } from "react-icons/fi";
+import { useWishlist } from "../context/WishlistContext";
+import "./Navbar.css";
 import { useCart } from "../context/CartContext";
-
-export default function Navbar() {
+function Navbar() {
+  const { wishlist } = useWishlist();
   const { cart } = useCart();
-
-  const cartCount = cart.reduce(
-    (total, item) => total + item.quantity,
-    0
-  );
-
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <h2>Cartify</h2>
-      </div>
+    <header className="navbar">
 
-      <div className="nav-links">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/products">Products</NavLink>
-        
-      </div>
+      {/* Left Navigation */}
 
-      <div className="nav-icons">
+      <nav className="nav-left">
 
-        <NavLink to="/cart" className="cart-icon">
-          <FaShoppingCart />
-          <span>{cartCount}</span>
-        
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Home
         </NavLink>
-  <NavLink to="/login"><FaUser className="user-icon" />
-</NavLink>
+
+        <NavLink
+          to="/products"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Shop
+        </NavLink>
+
+        <HashLink
+          smooth
+          to="/#collections"
+        >
+          Collections
+        </HashLink>
+
+      </nav>
+
+      {/* Logo */}
+
+      <div className="logo">
+
+        <NavLink to="/">
+          V E L O R A
+        </NavLink>
 
       </div>
-    </nav>
+
+      {/* Right Navigation */}
+
+      <nav className="nav-right">
+
+        <NavLink
+          to="/login"
+          className="icon-link"
+        >
+          <FiUser />
+        </NavLink>
+
+        <NavLink
+          to="/cart"
+          className="bag-link"
+        >
+          <FiShoppingBag />
+
+          <span className="bag-count">
+                {cart.length}
+
+          </span>
+
+        </NavLink>
+        <NavLink
+  to="/wishlist"
+  className="bag-link"
+>
+  <FiHeart />
+
+  <span className="bag-count">
+    {wishlist.length}
+  </span>
+
+</NavLink>
+      </nav>
+
+    </header>
   );
 }
+
+export default Navbar;

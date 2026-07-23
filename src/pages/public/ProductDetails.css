@@ -1,0 +1,359 @@
+/* ===========================
+   WRAPPER
+=========================== */
+
+.details-wrapper{
+    width:min(92%,1400px);
+    margin:60px auto 90px;
+}
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+
+.back-btn{
+
+    padding:14px 28px;
+
+    border:1px solid #ddd;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    color:#222;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    margin-bottom:40px;
+}
+
+.back-btn:hover{
+
+    background:#111;
+
+    color:#fff;
+
+    border-color:#111;
+
+    transform:translateX(-4px);
+
+}
+
+/* ===========================
+   LAYOUT
+=========================== */
+
+.details-container{
+
+    display:grid;
+
+    grid-template-columns:1.1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.details-image{
+
+    background:#fafafa;
+
+    border-radius:28px;
+
+    min-height:700px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px;
+
+}
+
+.details-image img{
+
+    width:100%;
+
+    max-width:520px;
+
+    max-height:600px;
+
+    object-fit:contain;
+
+    transition:.45s;
+
+}
+
+.details-image:hover img{
+
+    transform:scale(1.04);
+
+}
+
+/* ===========================
+   INFO
+=========================== */
+
+.details-info{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.product-category{
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    color:#999;
+
+    font-size:13px;
+
+    margin-bottom:18px;
+
+}
+
+.details-info h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    font-weight:500;
+
+    color:#111;
+
+    line-height:1.1;
+
+    margin-bottom:12px;
+
+}
+
+.details-info h3{
+
+    font-size:24px;
+
+    font-weight:500;
+
+    color:#666;
+
+    margin-bottom:18px;
+
+}
+
+.rating{
+
+    font-size:18px;
+
+    color:#666;
+
+    margin-bottom:18px;
+
+}
+
+.price{
+
+    font-size:46px;
+
+    color:#111;
+
+    margin-bottom:25px;
+
+}
+
+.description{
+
+    font-size:17px;
+
+    color:#666;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+.stock{
+
+    font-size:17px;
+
+    margin-bottom:35px;
+
+}
+
+.in-stock{
+
+    color:#2e7d32;
+
+    font-weight:600;
+
+}
+
+.out-stock{
+
+    color:#d32f2f;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.add-cart-btn{
+
+    width:280px;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#111;
+
+    color:#fff;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.add-cart-btn:hover{
+
+    background:#333;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   LOADING
+=========================== */
+
+.details-loading{
+
+    min-height:60vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-family:"Cormorant Garamond",serif;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.details-container{
+
+grid-template-columns:1fr;
+
+gap:50px;
+
+}
+
+.details-image{
+
+min-height:450px;
+
+padding:30px;
+
+}
+
+.details-image img{
+
+max-height:420px;
+
+}
+
+.details-info h1{
+
+font-size:42px;
+
+}
+
+.price{
+
+font-size:34px;
+
+}
+
+.add-cart-btn{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.details-wrapper{
+
+width:94%;
+
+}
+
+.details-image{
+
+padding:20px;
+
+}
+
+.details-info h1{
+
+font-size:34px;
+
+}
+
+.details-info h3{
+
+font-size:20px;
+
+}
+
+.description{
+
+font-size:15px;
+
+}
+
+.back-btn{
+
+width:100%;
+
+}
+
+}

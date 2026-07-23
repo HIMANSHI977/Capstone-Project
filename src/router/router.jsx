@@ -7,7 +7,7 @@ import Home from "../pages/public/Home";
 import Products from "../pages/public/Products";
 import Login from "../pages/public/Login";
 import Dashboard from "../pages/public/admin/Dashboard";
-
+import Wishlist from "../pages/public/Wishlist";
 import ProtectedRoute from "../Components/ProtectedRoute";
 import Cart from "../pages/public/Cart";
 const router = createBrowserRouter([
@@ -31,6 +31,10 @@ const router = createBrowserRouter([
         path: "login",
         element: <Login />,
       },
+      {
+    path:"/wishlist",
+    element:<Wishlist/>
+},
       {
   path: "cart",
   element: <Cart />,

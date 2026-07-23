@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ProductCard from "../../Components/ProductCard";
 import { useProducts } from "../../hooks/useProducts";
-
+import "./Products.css";
 export default function Products() {
   const { data = [], isLoading, isError, error } = useProducts();
 

@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap");
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 8%;
+
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(15px);
+
+  border-bottom: 1px solid #ececec;
+}
+
+/* LEFT */
+
+.nav-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #111;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav-left a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #111;
+
+  transition: .3s;
+}
+
+.nav-left a:hover::after,
+.nav-left .active::after {
+  width: 100%;
+}
+
+.nav-left a:hover {
+  color: #8b5e3c;
+}
+
+/* LOGO */
+
+.logo {
+  flex: 1;
+  text-align: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #111;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 3rem;
+
+  font-weight: 700;
+
+  letter-spacing: 6px;
+
+  transition: .3s;
+}
+
+.logo a:hover {
+  color: #8b5e3c;
+}
+
+/* RIGHT */
+
+.nav-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 28px;
+}
+
+.icon-link,
+.bag-link {
+  color: #111;
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
+  transition: .3s;
+}
+
+.icon-link:hover,
+.bag-link:hover {
+  color: #8b5e3c;
+  transform: translateY(-2px);
+}
+
+.bag-count {
+  position: absolute;
+
+  top: -8px;
+  right: -10px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 18px 5%;
+  }
+
+  .nav-left {
+    display: none;
+  }
+
+  .logo a {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .nav-right {
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .logo a {
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+  }
+
+  .icon-link,
+  .bag-link {
+    font-size: 20px;
+  }
+
+
+}

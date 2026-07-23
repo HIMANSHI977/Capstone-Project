@@ -5,7 +5,7 @@ import {
   FaSignOutAlt,
   FaUserCircle,
 } from "react-icons/fa";
-
+import './Sidebar.css';
 export default function Sidebar() {
   const navigate = useNavigate();
   const adminEmail = localStorage.getItem("adminEmail");
@@ -20,8 +20,8 @@ export default function Sidebar() {
       {/* Logo */}
       <div className="sidebar-top">
         <div className="sidebar-logo">
-          <h2>Cartify</h2>
-          <p>Admin Panel</p>
+          <h2>VELORA</h2>
+<p>Admin Dashboard</p>
         </div>
 
         {/* Navigation */}
@@ -44,7 +44,7 @@ export default function Sidebar() {
             }
           >
             <FaStore />
-            <span>View Storefront</span>
+            <span>View Shop</span>
           </NavLink>
         </nav>
       </div>

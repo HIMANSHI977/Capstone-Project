@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Login.css";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -7,60 +8,87 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-function handleSubmit(e) {
-  e.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
 
-  if (!email.trim() || !password.trim()) {
-    alert("Please enter email and password");
-    return;
+    if (!email.trim() || !password.trim()) {
+      alert("Please enter email and password");
+      return;
+    }
+
+    localStorage.setItem("isAdmin", "true");
+    localStorage.setItem("adminEmail", email);
+
+    navigate("/admin");
   }
 
-  localStorage.setItem("isAdmin", "true");
-  localStorage.setItem("adminEmail", email);
-
-  navigate("/admin");
-}
   return (
     <div className="login-page">
-      <div className="login-card">
 
-        <h1>Admin Login</h1>
+      <div className="login-container">
 
-        <p>
-          Login to access the Cartify Admin Dashboard
-        </p>
+        <div className="login-title">
 
-        <form onSubmit={handleSubmit} className="login-form">
+          <h1>Welcome Back</h1>
 
-          <label>Email</label>
+          <p>
+            Sign in to access the Velora Admin Dashboard
+          </p>
 
-          <input
-            type="email"
-            placeholder="admin@cartify.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+        </div>
 
-          <label>Password</label>
+        <form
+          className="login-form"
+          onSubmit={handleSubmit}
+        >
 
-          <input
-            type="password"
-            placeholder="Enter Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+          <div className="input-group">
 
-          <button type="submit">
-            Login as Admin
+            <label>Email Address</label>
+
+            <input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+
+          </div>
+
+          <div className="input-group">
+
+            <label>Password</label>
+
+            <input
+              type="password"
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+
+          </div>
+
+          <button
+            type="submit"
+            className="login-btn"
+          >
+            SIGN IN
           </button>
 
         </form>
 
-        
+        <div className="login-footer">
+
+          <p>
+            Secure access to the Velora Admin Panel
+          </p>
+
+        </div>
 
       </div>
+
     </div>
   );
 }

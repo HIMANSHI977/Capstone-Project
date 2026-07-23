@@ -1,73 +1,102 @@
+import "./Footer.css";
 import {
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+  FiInstagram,
+  FiFacebook,
+  FiTwitter,
+  FiYoutube,
+  FiSend,
+} from "react-icons/fi";
 
-
-export default function Footer() {
+function Footer() {
   return (
     <footer className="footer">
 
-      <div className="footer-container">
+      <div className="footer-top">
 
-        <div className="footer-section">
-          <h2>Nexus Store</h2>
+        <div className="footer-brand">
+
+          <h2>VELORA</h2>
 
           <p>
-            Discover premium products at unbeatable prices.
-            Shop with confidence and enjoy a seamless shopping experience.
+            Timeless shopping for modern lifestyles.
+            Curated products designed to elevate your everyday experience.
           </p>
-        </div>
-
-        <div className="footer-section">
-          <h3>Quick Links</h3>
-
-          <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>Cart</li>
-            <li>Login</li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Customer Support</h3>
-
-          <ul>
-            <li>Help Center</li>
-            <li>Shipping</li>
-            <li>Returns</li>
-            <li>Privacy Policy</li>
-          </ul>
-        </div>
-
-        <div className="footer-section">
-          <h3>Contact</h3>
-
-          <p>Email: support@nexusstore.com</p>
-
-          <p>Phone: +91 98765 43210</p>
-
-          <p>India</p>
 
           <div className="social-icons">
-            <FaFacebook />
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedin />
+            <a href="#"><FiInstagram /></a>
+            <a href="#"><FiFacebook /></a>
+            <a href="#"><FiTwitter /></a>
+            <a href="#"><FiYoutube /></a>
           </div>
+
+        </div>
+
+        <div className="footer-links">
+
+          <div>
+
+            <h4>Shop</h4>
+
+            <a href="#">All Products</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Collections</a>
+
+          </div>
+
+          <div>
+
+            <h4>Customer Care</h4>
+
+            <a href="#">Contact Us</a>
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQs</a>
+
+          </div>
+
+          <div>
+
+            <h4>About Us</h4>
+
+            <a href="#">Our Story</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
+
+          </div>
+
+          <div>
+
+            <h4>Stay Connected</h4>
+
+            <p>Subscribe for exclusive offers.</p>
+
+            <div className="newsletter">
+
+              <input
+                type="email"
+                placeholder="Enter your email"
+              />
+
+              <button>
+                <FiSend />
+              </button>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
 
-      <hr />
-
       <div className="footer-bottom">
-        © 2026 Nexus Store. All Rights Reserved.
+
+        <p>© 2026 VELORA. All Rights Reserved.</p>
+
       </div>
 
     </footer>
   );
 }
+
+export default Footer;

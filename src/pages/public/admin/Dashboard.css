@@ -1,0 +1,284 @@
+/* =========================
+   ADMIN LAYOUT
+========================= */
+
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+    background:#faf9f7;
+}
+
+.dashboard{
+    flex:1;
+    padding:50px 60px;
+    margin-left:290px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:45px;
+}
+
+.dashboard-header h1{
+    font-family:"Cormorant Garamond",serif;
+    font-size:62px;
+    font-weight:500;
+    color:#111;
+    line-height:1;
+}
+
+.dashboard-header p{
+    margin-top:12px;
+    font-size:18px;
+    color:#7d7d7d;
+}
+
+.dashboard-actions{
+    display:flex;
+    gap:18px;
+}
+
+.add-btn,
+.logout-btn{
+    border:none;
+    cursor:pointer;
+    height:56px;
+    padding:0 34px;
+    border-radius:999px;
+    font-size:16px;
+    font-weight:600;
+    transition:.35s;
+}
+
+.add-btn{
+    background:#111;
+    color:white;
+}
+
+.add-btn:hover{
+    background:#333;
+}
+
+.logout-btn{
+    background:#ececec;
+}
+
+.logout-btn:hover{
+    background:#dcdcdc;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.dashboard-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-bottom:50px;
+}
+
+.card{
+    background:white;
+    border-radius:22px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+
+.card h3{
+    font-size:18px;
+    color:#888;
+    font-weight:500;
+    margin-bottom:18px;
+}
+
+.card h2{
+    font-size:42px;
+    font-family:"Cormorant Garamond",serif;
+    color:#111;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.products-table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:24px;
+    background:white;
+    box-shadow:0 18px 45px rgba(0,0,0,.05);
+}
+
+.products-table thead{
+    background:#111;
+}
+
+.products-table th{
+    color:white;
+    font-size:17px;
+    font-weight:500;
+    padding:24px;
+    text-align:center;
+}
+
+.products-table td{
+    text-align:center;
+    padding:26px 18px;
+    font-size:17px;
+    color:#333;
+    border-bottom:1px solid #efefef;
+}
+
+.products-table tbody tr{
+    transition:.3s;
+}
+
+.products-table tbody tr:hover{
+    background:#fafafa;
+}
+
+.products-table img{
+    width:75px;
+    height:75px;
+    object-fit:cover;
+    border-radius:14px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.edit-btn,
+.delete-btn{
+    border:none;
+    cursor:pointer;
+    height:42px;
+    padding:0 20px;
+    border-radius:999px;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#111;
+    color:white;
+    margin-right:10px;
+}
+
+.edit-btn:hover{
+    background:#333;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+.delete-btn:hover{
+    background:#d42d2d;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999;
+}
+
+.modal{
+    width:720px;
+    background:white;
+    border-radius:24px;
+    padding:45px;
+}
+
+.modal h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:30px;
+    font-family:"Cormorant Garamond",serif;
+}
+
+.product-form{
+    display:grid;
+    gap:18px;
+}
+
+.product-form input,
+.product-form textarea{
+    border:1px solid #ddd;
+    border-radius:14px;
+    padding:16px;
+    font-size:16px;
+    outline:none;
+}
+
+.product-form input:focus,
+.product-form textarea:focus{
+    border-color:#111;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:20px;
+}
+
+.cancel-btn,
+.save-btn{
+    border:none;
+    height:52px;
+    padding:0 28px;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.cancel-btn{
+    background:#ececec;
+}
+
+.save-btn{
+    background:#111;
+    color:white;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+.dashboard{
+margin-left:0;
+padding:35px;
+}
+
+.dashboard-cards{
+grid-template-columns:1fr;
+}
+
+.products-table{
+display:block;
+overflow:auto;
+}
+
+}
