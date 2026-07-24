@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { useProduct } from "../../hooks/useProducts";
+import useProducts from "../../hooks/useProducts";
 import { useCart } from "../../context/CartContext";
 
 import "./ProductDetails.css";

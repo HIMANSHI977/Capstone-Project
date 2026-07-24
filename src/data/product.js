@@ -1,5 +1,5 @@
+const  products = [
 
-  {"products": [
     {
       "id": "1",
       "name": "Red Silk Evening Dress",
@@ -505,4 +505,5 @@
     "rating": 4.6,
     "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62"
   }
-]}
+];
+export default products;

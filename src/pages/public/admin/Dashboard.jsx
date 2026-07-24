@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import './Dashboard.css'
-import { useProducts } from "../../../hooks/useProducts";
+import useProducts from "../../../hooks/useProducts";
 import { useAddProduct } from "../../../hooks/useAddProduct";
 import { useUpdateProduct } from "../../../hooks/useUpdateProduct";
 import { useDeleteProduct } from "../../../hooks/useDeleteProduct";
