@@ -1,61 +1,51 @@
 import { useNavigate, useParams } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
 import { useCart } from "../../context/CartContext";
-
 import "./ProductDetails.css";
 
 export default function ProductDetails() {
   const { id } = useParams();
-
   const navigate = useNavigate();
 
   const {
-    data: product,
+    data: products = [],
     isLoading,
     isError,
-  } = useProduct(id);
+  } = useProducts();
 
   const { dispatch } = useCart();
 
+  const product = products.find(
+    (item) => String(item.id) === String(id)
+  );
+
   if (isLoading) {
-    return (
-      <div className="details-loading">
-        <h2>Loading Product...</h2>
-      </div>
-    );
+    return <h2>Loading...</h2>;
   }
 
   if (isError) {
-    return (
-      <div className="details-loading">
-        <h2>Something went wrong!</h2>
-      </div>
-    );
+    return <h2>Something went wrong.</h2>;
+  }
+
+  if (!product) {
+    return <h2>Product not found.</h2>;
   }
 
   return (
     <div className="details-wrapper">
-
       <button
         className="back-btn"
         onClick={() => navigate(-1)}
       >
-        ← Back to Shop
+        ← Back
       </button>
 
       <div className="details-container">
-
         <div className="details-image">
-
-          <img
-            src={product.image}
-            alt={product.name}
-          />
-
+          <img src={product.image} alt={product.name} />
         </div>
 
         <div className="details-info">
-
           <span className="product-category">
             {product.category}
           </span>
@@ -64,30 +54,17 @@ export default function ProductDetails() {
 
           <h3>{product.brand}</h3>
 
-          <p className="rating">
-            ⭐ {product.rating} / 5
-          </p>
+          <p>⭐ {product.rating}</p>
 
-          <h2 className="price">
-            ₹{product.price.toLocaleString()}
-          </h2>
+          <h2>₹{product.price}</h2>
 
-          <p className="description">
+          <p>
             {product.description ||
-              "Crafted with premium quality materials, designed to bring timeless elegance and comfort to your everyday lifestyle."}
+              "No description available."}
           </p>
 
-          <p className="stock">
-            <strong>Availability:</strong>{" "}
-            {product.stock > 0 ? (
-              <span className="in-stock">
-                In Stock ({product.stock})
-              </span>
-            ) : (
-              <span className="out-stock">
-                Out of Stock
-              </span>
-            )}
+          <p>
+            Stock: {product.stock}
           </p>
 
           <button
@@ -101,11 +78,8 @@ export default function ProductDetails() {
           >
             ADD TO CART
           </button>
-
         </div>
-
       </div>
-
     </div>
   );
 }
